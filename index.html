@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div id="particles-js"></div>
+        <div class="content">
+            <h1>Hello, I am Robert</h1>
+            <p>I am a full stack developer</p>
+            <a href="#projects" class="btn">View my work</a>
+        </div>
+        <script>
+            particlesJS.load('particles-js', 'particles.json', function() {
+                console.log('particles.js config loaded');
+            });
+        </script>
+    </section>
+
+    <section id="about">
+        <div class="about-container">
+            <div class="about-profile">
+                <div class="profile-icon">
+                    <img src="images/person.png" alt="Profile Icon">
+                </div>
+                <h1>About</h1>
+                <p>A former construction architect, I am currently finishing my Master's in Software Design at ITU Copenhagen. I am eager to pursue new challenges within the field of software development (full-stack, software architecture, or DevOps). Future me would be someone who creates a positive impact on the world through technology by leading high-performing teams. When I’m not at my computer, I like to spend my time running, power-lifting, reading, or being with my family</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card java">Java</div>
+                <div class="skill-card graphana">Graphana</div>
+                <div class="skill-card javascript">JavaScript</div>
+                <div class="skill-card docker">Docker</div>
+                <div class="skill-card react">React</div>
+                <div class="skill-card prometheus">Prometheus</div>
+                <div class="skill-card nodejs">Node.js</div>Æ
+                <div class="skill-card expressjs">Express.js</div>
+                <div class="skill-card mongodb">MongoDB</div>
+                <div class="skill-card git">Git</div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="projects-container">
+            <div class="project">
+                <div class="project-image-container">
+                    <img src="images/project-image.png" alt="Twitter Social Media App Screenshot" class="project-image">
+                </div>
+                <div class="project-info">
+                    <h2>Twitter Social Media App</h2>
+                    <p>Full stack social media application built with Node.js + Express + Prisma + Vagrant + Docker.</p>
+                    <a href="link_to_live_app" class="btn">Live App</a>
+                    <a href="https://github.com/RobertSluka/maxitwit" class="btn">Learn More</a>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-image-container">
+                    <img src="images/project-image.png" alt="Bug Tracker System Screenshot" class="project-image">
+                </div>
+                <div class="project-info">
+                    <h2>Bug Tracker System</h2>
+                    <p>A bug tracking software which organizes the project between project managers and developers by tracking each bug within each project with a professional GUI and database.
+                        
+                    </p>
+                    <p>Technologies used:</p>
+                    <ul>
+                        <li>Java</li>
+                        <li>SpringBoot</li>
+                        <li>Hibernate</li>
+                        <li>REST API</li>
+                        <li>PostgreSQL</li>
+                        <li>React</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <a href="link_to_live_app" class="btn">Live App</a>
+                    <a href="https://github.com/RobertSluka/Bug-Tracker-system" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-form">
+            <h1>Contact</h1>
+            <p>Have a question or want to work together? Leave your details and I'll get back to you as soon as possible.</p>
+            <form action="/submit-form" method="POST">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Robert. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
